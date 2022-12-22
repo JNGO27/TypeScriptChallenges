@@ -10,9 +10,9 @@ interface Todo {
   completed: boolean
 };
 
-type TodoPreview = Pick<Todo, 'title' | 'completed'>
+type TodoPreview = MyPick<Todo, 'title' | 'completed'>
 
 const todo: TodoPreview = {
-    title: 'Clean room',
-    completed: false,
+  title: 'Clean room',
+  completed: false,
 };
